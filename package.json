@@ -1,0 +1,27 @@
+{
+    "name": "sae",
+    "version": "1.0.0",
+    "description": "Server Api Engine JS to make micro services",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saejs/sae.git"
+    },
+    "keywords": [
+        "sae"
+    ],
+    "author": "Bruno Gonçalves",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/saejs/sae/issues"
+    },
+    "homepage": "https://github.com/saejs/sae#readme",
+    "dependencies": {
+        "sae-framework": "^0.0.23",
+        "sequelize": "^6.3.5",
+        "mysql2": "^2.2.5"
+    }
+}
