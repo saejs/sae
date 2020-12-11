@@ -1,10 +1,9 @@
 {
     "name": "sae",
-    "version": "1.0.0",
+    "version": "0.0.3",
     "description": "Server Api Engine JS to make micro services",
-    "main": "index.js",
     "scripts": {
-        "server": "nodemon server.js"
+        "local": "nodemon local.js"
     },
     "repository": {
         "type": "git",
@@ -21,6 +20,7 @@
     "homepage": "https://github.com/saejs/sae#readme",
     "dependencies": {
         "sae-framework": "^0.0.25",
+        "sae-aws-lambda": "^0.0.3",
         "sequelize": "^6.3.5",
         "mysql2": "^2.2.5"
     }
