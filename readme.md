@@ -8,6 +8,6 @@ O node irá visualizar as libs nesta pasta.
 ## Testar local
 Para testar localmente as rotas, pode ser executado o comando abaixo que será possivel verificar em `http://localhost:3080`.
 
-```
-    npm run local
+```batch
+npm run local
 ```
