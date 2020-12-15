@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/saejs/sae#readme",
     "devDependencies": {
-        "sae-framework": "^0.0.25",
+        "sae-framework": "^0.0.30",
         "sae-aws-lambda": "^0.0.3",
         "sequelize": "^6.3.5",
         "mysql2": "^2.2.5"

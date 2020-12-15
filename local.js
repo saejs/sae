@@ -7,4 +7,4 @@ app.version(path.resolve(__dirname, 'package.json'));
 // Register routes
 require('./app/routes')(app);
 
-app.listen(3080);
+app.listen(8080);

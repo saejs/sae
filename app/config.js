@@ -1,13 +1,32 @@
+const { connectionStringParser } = require('sae-framework/src/db/connections');
+
 // Carregar envs
 require('dotenv').config();
 
+var info = {
+    host      : '',
+    database  : '',
+    username  : '',
+    password  : '',
+};
+
+// Carregar string connection
+if (process.env.DB_CONNECTION) {
+    info = connectionStringParser(process.env.DB_CONNECTION);
+    if (!info) {
+        throw "String de conexão não foi informada";
+    }
+}
+
+
+// Configurações
 module.exports = {
     "development": {
        
-        "host"     : process.env.DB_HOST,
-        "database" : process.env.DB_DBNAME,
-        "username" : process.env.DB_USER,
-        "password" : process.env.DB_PASS,
+        "host"     : info.host,
+        "database" : info.database,
+        "username" : info.username,
+        "password" : info.password,
         "dialect"  : process.env.DB_DIALECT ? process.env.DB_DIALECT : "mysql",
         "timezone" : process.env.TZ ? process.env.TZ : "America/Sao_Paulo",
 
