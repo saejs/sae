@@ -1,7 +1,11 @@
+const path = require('path');
 const { Inquilino } = require('./models');
 //const InquilinoController = require('./controllers/InquilinoController');
 
 module.exports = (app) => {
+
+    // Register app version route
+    app.version(path.resolve(__dirname, '..', 'package.json'));
 
     //InquilinoController.register(app);
 
